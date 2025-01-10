@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
+import frc.robot.Constants.OIConstants;
 import frc.robot.Constants.SubsystemConstants;
 import frc.robot.Subsystems.Subsystem;
 
@@ -24,7 +25,7 @@ public class RobotContainer {
 
   public RobotContainer() {
     // objects are initialized in constructor
-    driver = new CommandXboxController(Constants.driver);
+    driver = new CommandXboxController(OIConstants.driver);
     subsystem = new Subsystem(SubsystemConstants.kMotor1ID);
     configureBindings();
   }

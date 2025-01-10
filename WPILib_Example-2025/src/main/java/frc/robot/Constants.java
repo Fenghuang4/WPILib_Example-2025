@@ -2,7 +2,9 @@ package frc.robot;
 
 // all universal constants
 public class Constants {
-    public static final int driver = 0;
+    public static final class OIConstants {
+        public static final int driver = 0;
+    }
     public static final class SubsystemConstants {
         public static final int kMotor1ID = 0;
         public static final int kMotor2ID = 1;
